@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>title</title>
+  </head>
+  <body>
+    <header>
+      <div id="head">
+       <div class="logo">
+        <img  class="header-item col-md-4" src="https://ketoanalt.com/wp-content/uploads/2023/01/logoo.png"
+        alt>
+       </div>
+       <div class="content">
+        <p  class="header-item col-content">DỊCH VỤ KẾ TOÁN THUẾ ALT</p>
+       </div>
+       <div class="hotline">
+        <a class="header-item img" href>
+          <div style="display: flex; flex-direction: column;justify-content: center;" >
+            <img src="" alt>
+            <p>HOTLINE: 0906 996 253</p>
+          </div>
+        </a>
+       </div>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li class="item-content" style="background-color: #fff;"><a style="color: black;" href="phuclong.html">TRANG CHỦ</a></li>
+          <li class="item-content"><a href="">GIỚI THIỆU</a></li>
+          <li class="item-content menu-content" style="position: relative;"><a href="">DỊCH VỤ KẾ TOÁN - BHXH</a>
+            <ul id="menu-con">
+              <li><a  href="">BÁO CÁO THUẾ TRỌN GÓI</a></li>
+              <li><a  href="">BÁO CÁO TÀI CHÍNH CUỐI NĂM</a></li>
+              <li><a  href="">QUYẾT TOÁN THUẾ</a></li>
+              <li><a  href="">BÁO CÁO TOÀN BỘ</a></li>
+              <li><a  href="">RÀ SÓT SỔ SÁCH</a></li>
+              <li><a  href="">BÁO CÁO BHXH LẦN ĐẦU</a></li>
+              <li><a  href="">BÁO CÁO BHXH DUY TRÌ</a></li>
+              <li><a  href="">THUÊ KÉ TOÁN THUẾ - NỘI BỘ PARTIME</a></li>
+            </ul>
+          </li>
+          <li class="item-content menu-content2" style="position: relative;" ><a href="">DỊCH VỤ HĐĐT - CKS</a>
+             <ul id="menu-con2">
+              <li><a  href="">Hóa đơn điện tử</a></li>
+              <li><a  href="">Chữ ký số</a></li>
+             </ul>
+          </li>
+          <li class="item-content" style="position: relative;"><a href="sanpham.html">DỊCH VỤ THÀNH LẬP</a>
+            <ul id="menu-con3">
+              <li><a  href="">Thành lập công ty</a></li>
+              <li><a  href="">Thay đổi đăng ký kinh doanh</a></li>
+              <li><a  href="">Tạm dừng kinh doanh</a></li>
+              <li><a  href="">Giải thể công ty</a></li>
+              <li><a  href="">Thành lập hội kinh doanh</a></li>
+             </ul>
+          </li>
+          <li class="item-content" style="position: relative;"><a href="">DỊCH VỤ KHÁC</a>
+            <ul id="menu-con4" >
+              <li><a  href="">Đăng kí bảo hộ thương hiệu</a></li>
+              <li><a  href="">Thiết kế logo - website</a></li>
+              <li><a  href="">Phần mềm kế toán</a></li>
+             </ul>
+          </li>
+          <li class="item-content"><a href="form.html">TIN TỨC</a></li>
+          <li class="item-content"><a href="">LIÊN HỆ</a></li>
+          <li class="item-content"><a href="">ABOUT</a></li>
+      </ul>
+      </nav>
+      <aside class="banner">
+        <img src="media/banner.jpg" alt="" id="hinh1">
+        <div class="slide">
+            
+            <img onclick="prev()" class="ti-angle-left" src="media/back-button.png" alt="">
+            <img onclick="next()" class="ti-angle-right" src="media/right.png" alt="">
+               
+        </div>
+        
+    </aside>
+    </header>
+  </body>
+  <script>
+    var c = ["media/banner.jpg","media/banner1.jpg","media/banner2.jpg"];
+    var a = ["images/logo.png","images/logo_1.png","images/logo_2.png"]
+    index=0;
+        function prev(){
+            index--;
+            if(index < 0){
+                index = c.length-1
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+        function next(){
+            index++;
+            if(index >= c.length){
+                index = 0;
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+       
+        function dn(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.toggle('active');
+        }
+        function closee(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.remove('active');
+        }
+
+</script>
+</html>
