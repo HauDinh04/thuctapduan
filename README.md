@@ -7,7 +7,6 @@
 -Nguyễn Đình Nhật
 -Lê Hoàng Duy 
 -Dương Đình Hậu
-## Đóng góp
-Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng, nếu bạn muốn đóng góp vào dự án này
+
 
 
